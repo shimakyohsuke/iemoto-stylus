@@ -1,6 +1,6 @@
 /**
- * iemoto-shimakyohsuke
- * https://github.com/megumiteam/iemoto/blob/master/template.js
+ * iemoto-stylus
+ * https://github.com/shimakyohsuke/iemoto-stylus/blob/master/template.js
  *
  * Licensed under the GPLv2
  */
