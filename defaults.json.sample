@@ -1,0 +1,13 @@
+{
+  "title":           "iemoto-stylus",
+  "prefix":          "application",
+  "description":     "Stylus っていいよね。",
+  "contributor":     "shimakyohsuke",
+  "homepage":        "http://example.com",
+  "author_name":     "shimakyohsuke",
+  "author_url":      "http://shimakyohsuke.com",
+  "repository_type": "git",
+  "repository_url":  "",
+  "license":         "GPLv2",
+  "license_uri":     "http://www.gnu.org/licenses/gpl-2.0.html"
+}

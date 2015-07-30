@@ -1,0 +1,35 @@
+html
+	box-sizing border-box
+
+*,
+*:before,
+*:after
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see　http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing inherit
+
+body
+	/* Fallback for when there is no custom background color defined. */
+	background color__background-body
+
+blockquote, q
+	quotes "" ""
+
+	&:before,
+	&:after
+		content ""
+
+hr
+	background-color color__background-hr
+	border 0
+	height 1px
+	margin-bottom 1.5em
+
+@import "_lists"
+
+img
+	/* Make sure images are scaled correctly. */
+	height auto
+	/* Adhere to container width. */
+	max-width 100%
+
+@import "_tables"
