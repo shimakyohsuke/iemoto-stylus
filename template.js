@@ -17,11 +17,11 @@ exports.warnOn = '*';
 exports.template = function( grunt, init, done ) {
     init.process( {}, [
         // Prompt for these values.
-        init.prompt( 'title', 'iemoto-stylus' ),
+        init.prompt( 'title', 'iemoto stylus' ),
         {
             name   : 'prefix',
             message: 'PHP function prefix (alpha and underscore characters only)',
-            default: 'application'
+            default: 'iemoto-stylus'
         },
         init.prompt( 'description', 'Stylus っていいよね。' ),
         init.prompt( 'homepage', 'http://example.com' ),
