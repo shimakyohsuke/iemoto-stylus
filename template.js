@@ -40,7 +40,7 @@ exports.template = function( grunt, init, done ) {
             "gulp-plumber": "^0.6.6",
             "gulp-replace": "^0.5.0",
             "gulp-pleeease": "^1.1.0",
-            "gulp-stylus": "^1.3.4",
+            "gulp-stylus": "^1.3.4"
         };
         // Sanitize names where we need to for PHP/JS
         props.name = props.title.replace( /\s+/g, '-' ).toLowerCase();
