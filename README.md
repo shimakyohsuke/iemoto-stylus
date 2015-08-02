@@ -31,3 +31,4 @@ npm install
 - gulp-replace
 - gulp-stylus
 - gulp-pleeease
+- BrowserSync
