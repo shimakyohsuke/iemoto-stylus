@@ -26,13 +26,15 @@ exports.template = function( grunt, init, done ) {
         init.prompt( 'description', 'Stylus っていいよね。' ),
         init.prompt( 'homepage', 'http://example.com' ),
         init.prompt( 'author_name', 'shimakyohsuke' ),
-        init.prompt( 'author_url', 'http://shimakyohsuke.com' )
+        init.prompt( 'author_url', 'http://shimakyohsuke.com' ),
+        init.prompt( 'development_url', 'vccw.dev' )
     ], function( err, props ) {
         props.keywords = [];
         props.version = '0.1.0';
         props.private = true;
         // Use gulp only
         props.devDependencies = {
+            "browser-sync": "^1.7.3",
             "gulp": "^3.9.0",
             "gulp-jshint": "^1.9.0",
             "gulp-load-plugins": "^0.7.0",

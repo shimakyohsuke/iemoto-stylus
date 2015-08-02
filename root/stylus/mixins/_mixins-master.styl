@@ -1,5 +1,5 @@
 // Rem output with px fallback
-font-size(sizeValue = 1)
+fontSize(sizeValue = 1)
 	font-size (sizeValue * 16) * 1px
 	font-size sizeValue * 1rem
 
@@ -20,30 +20,3 @@ clearfix()
 // Clear after (not all clearfix need this also)
 clearfix-after()
 	clear both
-
-ds(w,h = auto,f = left)
-  width w
-  height h
-  float f
-
-
-fs(c,fz,lh,fw = 400)
-  color c
-  font-size fz
-  line-height (lh * 100)%
-  font-weight fw
-
-// Opacity
-opa(o,t = 0.25)
-  opacity o
-  transition t
-
-// Line height
-lh(n)
-  line-height (n * 100)%
-
-marginTop(t-baseMargin = 20px, t-FontSize = 14px, t-LineHeight = 22px)
-  margin-top (t-baseMargin - ((t-LineHeight - t-FontSize) / 2))
-
-marginBottom(b-baseMargin = 20px, b-FontSize = 14px, b-LineHeight = 22px)
-  margin-bottom (t-baseMargin - ((t-LineHeight - t-FontSize) / 2))

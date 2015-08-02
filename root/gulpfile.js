@@ -1,6 +1,35 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
 var pkg  = require('./package.json');
+var browserSync = require('browser-sync');
+var reload      = browserSync.reload;
+
+var sources = {
+    url: '{%= development_url %}'
+};
+
+// browserSync
+gulp.task('browserSync', function() {
+    browserSync({
+        proxy: sources.url + '/'
+    });
+    gulp.watch(['stylus/{,*/}{,*/}*.styl', './stylus/**/*.styl'], ['stylus-browserSync']);
+});
+
+// stylus
+gulp.task('stylus-browserSync', function () {
+    return gulp.src(['./stylus/**/*.styl', '!./stylus/_*.styl', '!./stylus/**/_*.styl', '!./stylus/**/**/_*.styl'])
+        .pipe($.plumber())
+        .pipe($.stylus())
+        .pipe($.pleeease({
+            minifier: false,
+            autoprefixer: "last 2 versions"
+        }))
+        .pipe($.replace(/<%= pkg.version %>/g, pkg.version))
+        .on('error', console.error.bind(console))
+        .pipe(gulp.dest('./'))
+        .on('end', reload);
+});
 
 // stylus
 gulp.task('stylus', function () {
@@ -37,8 +66,8 @@ gulp.task('js', function() {
 
 // watch
 gulp.task('watch', function () {
-  gulp.watch('js/{%= file_name %}.js', ['js']);
-  gulp.watch('stylus/{,*/}{,*/}*.styl', ['stylus']);
+    gulp.watch('js/{%= file_name %}.js', ['js']);
+    gulp.watch('stylus/{,*/}{,*/}*.styl', ['stylus']);
 });
 
 // default task
