@@ -21,7 +21,7 @@ exports.template = function( grunt, init, done ) {
         {
             name   : 'prefix',
             message: 'PHP function prefix (alpha and underscore characters only)',
-            default: 'iemoto-stylus'
+            default: 'iemoto_stylus'
         },
         init.prompt( 'description', 'Stylus っていいよね。' ),
         init.prompt( 'homepage', 'http://example.com' ),
