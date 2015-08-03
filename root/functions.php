@@ -5,6 +5,8 @@
  * @package {%= title %}
  */
 
+if ( ! isset( $content_width ) ) $content_width = 900;
+
 if ( ! function_exists( '{%= prefix %}_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.

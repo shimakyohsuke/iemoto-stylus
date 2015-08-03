@@ -16,7 +16,7 @@ gulp.task('browserSync', function() {
     gulp.watch(['stylus/{,*/}{,*/}*.styl', './stylus/**/*.styl'], ['stylus-browserSync']);
 });
 
-// stylus
+// stylus-browserSync
 gulp.task('stylus-browserSync', function () {
     return gulp.src(['./stylus/**/*.styl', '!./stylus/_*.styl', '!./stylus/**/_*.styl', '!./stylus/**/**/_*.styl'])
         .pipe($.plumber())
