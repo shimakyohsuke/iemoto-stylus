@@ -8,8 +8,7 @@ scss ファイルを勝手に stylus ファイルに変換しただけ。
 
 > This is a WordPress Starter Theme based on _s and integrated with grunt.  
 Iemoto follows all the fixes and feature upgrades of _s
-Automate theme development process with it!
-
+Automate theme development process with it!  
 megumiteam/iemoto  
 <https://github.com/megumiteam/iemoto>
 
