@@ -1,7 +1,7 @@
 # Iemoto さんで stylus を使う
 
-scss ファイルを勝手に stylus ファイルに変換しただけ
-
+scss ファイルを勝手に stylus ファイルに変換しただけ。  
+あと BrowserSync（[Browsersync + Gulp.js](http://www.browsersync.io/docs/gulp/)）とかつけたので、`$ gulp browserSync` で stylus ファイルとか js ファイルを watch して保存されたら更新したりします。
 
 ----
 
@@ -13,7 +13,6 @@ megumiteam/iemoto
 ## Usage
 
 ```
-
 mkdir ~/.grunt-init
 git clone git@github.com:shimakyohsuke/iemoto-stylus.git ~/.grunt-init/iemoto-stylus
 mkdir wp-content/themes/my-theme

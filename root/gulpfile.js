@@ -14,6 +14,7 @@ gulp.task('browserSync', function() {
         proxy: sources.url + '/'
     });
     gulp.watch(['stylus/{,*/}{,*/}*.styl', './stylus/**/*.styl'], ['stylus-browserSync']);
+    gulp.watch('js/{%= file_name %}.js', ['js']);
 });
 
 // stylus-browserSync
