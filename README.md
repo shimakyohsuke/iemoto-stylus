@@ -4,6 +4,11 @@ scss ファイルを勝手に stylus ファイルに変換しただけ。
 あと BrowserSync（[Browsersync + Gulp.js](http://www.browsersync.io/docs/gulp/)）とかつけたので、`$ gulp browserSync` で stylus ファイルとか js ファイルを watch して保存されたら更新したりします。
 
 ----
+# Iemoto
+
+> This is a WordPress Starter Theme based on _s and integrated with grunt.  
+Iemoto follows all the fixes and feature upgrades of _s
+Automate theme development process with it!
 
 megumiteam/iemoto  
 <https://github.com/megumiteam/iemoto>
